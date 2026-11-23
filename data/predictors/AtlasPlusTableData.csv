@@ -1,0 +1,229 @@
+﻿Indicator,Year,Geography,FIPS,Cases,Rate per 100000
+HIV prevalence,2020 (COVID-19 Pandemic),Alabama,1,"13,954",329.8
+HIV prevalence,2021,Alabama,1,"14,252",334.9
+HIV prevalence,2022,Alabama,1,"14,634",341.8
+HIV prevalence,2023,Alabama,1,"15,007",347.8
+HIV prevalence,2023,Alaska,2,805,132.5
+HIV prevalence,2023,American Samoa,60,1,2.9
+HIV prevalence,2022,Alaska,2,769,127
+HIV prevalence,2022,American Samoa,60,1,2.9
+HIV prevalence,2021,Alaska,2,750,123.9
+HIV prevalence,2021,American Samoa,60,1,2.8
+HIV prevalence,2020 (COVID-19 Pandemic),Alaska,2,726,120.7
+HIV prevalence,2020 (COVID-19 Pandemic),American Samoa,60,1,2.8
+HIV prevalence,2020 (COVID-19 Pandemic),Arizona,4,"17,524",289.1
+HIV prevalence,2021,Arizona,4,"18,102",293.9
+HIV prevalence,2022,Arizona,4,"18,641",297.8
+HIV prevalence,2023,Arizona,4,"19,377",306
+HIV prevalence,2020 (COVID-19 Pandemic),Arkansas,5,"5,956",236.9
+HIV prevalence,2021,Arkansas,5,"6,177",243.9
+HIV prevalence,2022,Arkansas,5,"6,343",248.6
+HIV prevalence,2023,Arkansas,5,"6,493",252.3
+HIV prevalence,2020 (COVID-19 Pandemic),California,6,"134,097",403.9
+HIV prevalence,2021,California,6,"136,102",412.2
+HIV prevalence,2022,California,6,"138,534",419.2
+HIV prevalence,2023,California,6,"140,985",426.1
+HIV prevalence,2020 (COVID-19 Pandemic),Colorado,8,"12,965",264.6
+HIV prevalence,2021,Colorado,8,"13,265",268.4
+HIV prevalence,2022,Colorado,8,"13,610",273
+HIV prevalence,2023,Colorado,8,"14,129",280.8
+HIV prevalence,2020 (COVID-19 Pandemic),Connecticut,9,"10,485",341.5
+HIV prevalence,2021,Connecticut,9,"10,535",339.6
+HIV prevalence,2022,Connecticut,9,"10,620",341.6
+HIV prevalence,2023,Connecticut,9,"10,751",344.7
+HIV prevalence,2020 (COVID-19 Pandemic),Delaware,10,"3,411",404.6
+HIV prevalence,2021,Delaware,10,"3,471",404.9
+HIV prevalence,2022,Delaware,10,"3,618",415.4
+HIV prevalence,2023,Delaware,10,"3,710",420
+HIV prevalence,2020 (COVID-19 Pandemic),District of Columbia,11,"13,630",2385.6
+HIV prevalence,2021,District of Columbia,11,"13,439",2351.6
+HIV prevalence,2022,District of Columbia,11,"13,416",2338.2
+HIV prevalence,2023,District of Columbia,11,"13,305",2285.7
+HIV prevalence,2020 (COVID-19 Pandemic),Florida,12,"114,559",617.1
+HIV prevalence,2021,Florida,12,"117,139",622.3
+HIV prevalence,2022,Florida,12,"120,341",626.8
+HIV prevalence,2023,Florida,12,"123,279",631.1
+HIV prevalence,2020 (COVID-19 Pandemic),Georgia,13,"57,353",641.1
+HIV prevalence,2021,Georgia,13,"58,991",653.6
+HIV prevalence,2022,Georgia,13,"60,642",662.7
+HIV prevalence,2023,Georgia,13,"61,857",667.4
+HIV prevalence,2023,Guam^,66,120,92.3
+HIV prevalence,2022,Guam^,66,120,92.7
+HIV prevalence,2021,Guam^,66,117,90.8
+HIV prevalence,2020 (COVID-19 Pandemic),Guam^,66,116,90.4
+HIV prevalence,2020 (COVID-19 Pandemic),Hawaii,15,"2,354",192
+HIV prevalence,2021,Hawaii,15,"2,378",193.9
+HIV prevalence,2022,Hawaii,15,"2,426",198.4
+HIV prevalence,2023,Hawaii,15,"2,402",196.6
+HIV prevalence,2020 (COVID-19 Pandemic),Idaho,16,"1,282",83.9
+HIV prevalence,2021,Idaho,16,"1,326",83.9
+HIV prevalence,2022,Idaho,16,"1,382",85.6
+HIV prevalence,2023,Idaho,16,"1,456",88.6
+HIV prevalence,2020 (COVID-19 Pandemic),Illinois,17,"35,691",331.1
+HIV prevalence,2021,Illinois,17,"35,681",332.4
+HIV prevalence,2022,Illinois,17,"36,205",339.2
+HIV prevalence,2023,Illinois,17,"37,185",348.3
+HIV prevalence,2020 (COVID-19 Pandemic),Indiana,18,"11,765",208
+HIV prevalence,2021,Indiana,18,"12,244",215.1
+HIV prevalence,2022,Indiana,18,"12,717",222.5
+HIV prevalence,2023,Indiana,18,"13,268",230.8
+HIV prevalence,2020 (COVID-19 Pandemic),Iowa,19,"2,918",109.5
+HIV prevalence,2021,Iowa,19,"3,043",113.5
+HIV prevalence,2022,Iowa,19,"3,201",119.1
+HIV prevalence,2023,Iowa,19,"3,332",123.5
+HIV prevalence,2020 (COVID-19 Pandemic),Kansas,20,"3,288",135.1
+HIV prevalence,2021,Kansas,20,"3,469",142.1
+HIV prevalence,2022,Kansas,20,"3,593",146.9
+HIV prevalence,2023,Kansas,20,"3,708",151
+HIV prevalence,2020 (COVID-19 Pandemic),Kentucky,21,"7,740",204.8
+HIV prevalence,2021,Kentucky,21,"8,037",212.3
+HIV prevalence,2022,Kentucky,21,"8,445",222.6
+HIV prevalence,2023,Kentucky,21,"8,865",232.7
+HIV prevalence,2020 (COVID-19 Pandemic),Louisiana,22,"21,164",548.3
+HIV prevalence,2021,Louisiana,22,"21,395",555.6
+HIV prevalence,2022,Louisiana,22,"21,755",568.6
+HIV prevalence,2023,Louisiana,22,"22,229",582
+HIV prevalence,2020 (COVID-19 Pandemic),Maine,23,"1,643",138.3
+HIV prevalence,2021,Maine,23,"1,687",140.1
+HIV prevalence,2022,Maine,23,"1,768",145.4
+HIV prevalence,2023,Maine,23,"1,849",151.1
+HIV prevalence,2020 (COVID-19 Pandemic),Maryland,24,"33,566",647.4
+HIV prevalence,2021,Maryland,24,"33,676",647.3
+HIV prevalence,2022,Maryland,24,"33,753",649
+HIV prevalence,2023,Maryland,24,"33,988",650.8
+HIV prevalence,2020 (COVID-19 Pandemic),Massachusetts,25,"20,958",347.7
+HIV prevalence,2021,Massachusetts,25,"21,099",349.3
+HIV prevalence,2022,Massachusetts,25,"21,340",353.2
+HIV prevalence,2023,Massachusetts,25,"21,766",358.8
+HIV prevalence,2020 (COVID-19 Pandemic),Michigan,26,"16,800",196.7
+HIV prevalence,2021,Michigan,26,"17,246",202.1
+HIV prevalence,2022,Michigan,26,"17,575",205.7
+HIV prevalence,2023,Michigan,26,"17,986",210
+HIV prevalence,2020 (COVID-19 Pandemic),Minnesota,27,"8,577",180
+HIV prevalence,2021,Minnesota,27,"8,763",183
+HIV prevalence,2022,Minnesota,27,"9,017",188.1
+HIV prevalence,2023,Minnesota,27,"9,355",193.9
+HIV prevalence,2020 (COVID-19 Pandemic),Mississippi^,28,"9,594",388.8
+HIV prevalence,2021,Mississippi^,28,"9,813",397.5
+HIV prevalence,2022,Mississippi^,28,"9,970",404.4
+HIV prevalence,2023,Mississippi^,28,"10,418",421.7
+HIV prevalence,2020 (COVID-19 Pandemic),Missouri,29,"12,741",246.6
+HIV prevalence,2021,Missouri,29,"12,957",249.5
+HIV prevalence,2022,Missouri,29,"13,177",253
+HIV prevalence,2023,Missouri,29,"13,580",259.5
+HIV prevalence,2023,Montana,30,738,76.2
+HIV prevalence,2022,Montana,30,721,75.3
+HIV prevalence,2021,Montana,30,713,75.8
+HIV prevalence,2020 (COVID-19 Pandemic),Montana,30,676,73.4
+HIV prevalence,2020 (COVID-19 Pandemic),Nebraska,31,"2,293",142.1
+HIV prevalence,2021,Nebraska,31,"2,359",145.6
+HIV prevalence,2022,Nebraska,31,"2,431",149.4
+HIV prevalence,2023,Nebraska,31,"2,559",156.1
+HIV prevalence,2020 (COVID-19 Pandemic),Nevada,32,"10,933",417.2
+HIV prevalence,2021,Nevada,32,"11,350",427.1
+HIV prevalence,2022,Nevada,32,"11,735",436
+HIV prevalence,2023,Nevada,32,"12,196",449.2
+HIV prevalence,2020 (COVID-19 Pandemic),New Hampshire,33,"1,314",109.4
+HIV prevalence,2021,New Hampshire,33,"1,354",111.8
+HIV prevalence,2022,New Hampshire,33,"1,375",112.4
+HIV prevalence,2023,New Hampshire,33,"1,400",113.9
+HIV prevalence,2020 (COVID-19 Pandemic),New Jersey,34,"34,312",438.3
+HIV prevalence,2021,New Jersey,34,"34,488",439.6
+HIV prevalence,2022,New Jersey,34,"34,967",445.7
+HIV prevalence,2023,New Jersey,34,"35,260",447.4
+HIV prevalence,2020 (COVID-19 Pandemic),New Mexico,35,"3,888",217.8
+HIV prevalence,2021,New Mexico,35,"4,009",223.6
+HIV prevalence,2022,New Mexico,35,"4,058",225.8
+HIV prevalence,2023,New Mexico,35,"4,134",228.9
+HIV prevalence,2020 (COVID-19 Pandemic),New York,36,"123,811",724.5
+HIV prevalence,2021,New York,36,"123,436",729.2
+HIV prevalence,2022,New York,36,"124,161",738.6
+HIV prevalence,2023,New York,36,"126,187",752.7
+HIV prevalence,2020 (COVID-19 Pandemic),North Carolina,37,"33,275",377.2
+HIV prevalence,2021,North Carolina,37,"34,089",381.1
+HIV prevalence,2022,North Carolina,37,"34,898",384.8
+HIV prevalence,2023,North Carolina,37,"35,741",388.4
+HIV prevalence,2023,North Dakota,38,570,87.6
+HIV prevalence,2023,Northern Mariana Islands,69,19,45.7
+HIV prevalence,2022,North Dakota,38,542,84
+HIV prevalence,2022,Northern Mariana Islands,69,18,43.3
+HIV prevalence,2021,North Dakota,38,532,82.7
+HIV prevalence,2021,Northern Mariana Islands,69,18,43.5
+HIV prevalence,2020 (COVID-19 Pandemic),North Dakota,38,513,79.9
+HIV prevalence,2020 (COVID-19 Pandemic),Northern Mariana Islands,69,18,43.7
+HIV prevalence,2020 (COVID-19 Pandemic),Ohio,39,"23,432",235.8
+HIV prevalence,2021,Ohio,39,"23,946",241.2
+HIV prevalence,2022,Ohio,39,"24,439",245.9
+HIV prevalence,2023,Ohio,39,"25,241",253
+HIV prevalence,2020 (COVID-19 Pandemic),Oklahoma,40,"6,572",200.5
+HIV prevalence,2021,Oklahoma,40,"6,899",208.5
+HIV prevalence,2022,Oklahoma,40,"7,247",217.1
+HIV prevalence,2023,Oklahoma,40,"7,677",227.5
+HIV prevalence,2020 (COVID-19 Pandemic),Oregon,41,"7,303",201.3
+HIV prevalence,2021,Oregon,41,"7,448",203.8
+HIV prevalence,2022,Oregon,41,"7,532",206.3
+HIV prevalence,2023,Oregon,41,"7,703",210.6
+HIV prevalence,2023,Palau,70,10,53.9
+HIV prevalence,2022,Palau,70,10,54.1
+HIV prevalence,2021,Palau,70,10,54.3
+HIV prevalence,2020 (COVID-19 Pandemic),Palau,70,10,54.5
+HIV prevalence,2020 (COVID-19 Pandemic),Pennsylvania,42,"36,370",327.9
+HIV prevalence,2021,Pennsylvania,42,"36,793",330.4
+HIV prevalence,2022,Pennsylvania,42,"37,204",334.7
+HIV prevalence,2023,Pennsylvania,42,"38,269",344
+HIV prevalence,2020 (COVID-19 Pandemic),Puerto Rico,72,"15,245",524.3
+HIV prevalence,2021,Puerto Rico,72,"15,321",527
+HIV prevalence,2022,Puerto Rico,72,"15,342",531.6
+HIV prevalence,2023,Puerto Rico,72,"15,431",534.5
+HIV prevalence,2020 (COVID-19 Pandemic),Rhode Island,44,"2,666",281.1
+HIV prevalence,2021,Rhode Island,44,"2,709",284.7
+HIV prevalence,2022,Rhode Island,44,"2,751",289.5
+HIV prevalence,2023,Rhode Island,44,"2,792",292.9
+HIV prevalence,2020 (COVID-19 Pandemic),South Carolina,45,"17,615",405.7
+HIV prevalence,2021,South Carolina,45,"17,945",407.1
+HIV prevalence,2022,South Carolina,45,"18,289",407.2
+HIV prevalence,2023,South Carolina,45,"19,049",416.2
+HIV prevalence,2023,South Dakota,46,814,106.9
+HIV prevalence,2022,South Dakota,46,768,102.1
+HIV prevalence,2021,South Dakota,46,722,97.7
+HIV prevalence,2020 (COVID-19 Pandemic),South Dakota,46,691,94.7
+HIV prevalence,2020 (COVID-19 Pandemic),Tennessee,47,"18,303",314.3
+HIV prevalence,2021,Tennessee,47,"18,697",318.6
+HIV prevalence,2022,Tennessee,47,"19,318",324.7
+HIV prevalence,2023,Tennessee,47,"19,852",329.7
+HIV prevalence,2020 (COVID-19 Pandemic),Texas,48,"97,464",407.3
+HIV prevalence,2021,Texas,48,"100,845",415
+HIV prevalence,2022,Texas,48,"105,437",426.2
+HIV prevalence,2023,Texas,48,"110,094",437.2
+HIV prevalence,2023,U.S. Virgin Islands^,78,558,635.9
+HIV prevalence,2022,U.S. Virgin Islands^,78,559,636.3
+HIV prevalence,2021,U.S. Virgin Islands^,78,550,625.8
+HIV prevalence,2020 (COVID-19 Pandemic),U.S. Virgin Islands^,78,547,622.7
+HIV prevalence,2020 (COVID-19 Pandemic),Utah,49,"3,259",124.7
+HIV prevalence,2021,Utah,49,"3,431",128.3
+HIV prevalence,2022,Utah,49,"3,593",131.8
+HIV prevalence,2023,Utah,49,"3,808",137.4
+HIV prevalence,2023,Vermont,50,754,132.6
+HIV prevalence,2022,Vermont,50,753,132.8
+HIV prevalence,2021,Vermont,50,725,128
+HIV prevalence,2020 (COVID-19 Pandemic),Vermont,50,706,125.9
+HIV prevalence,2020 (COVID-19 Pandemic),Virginia,51,"23,656",324.9
+HIV prevalence,2021,Virginia,51,"24,107",329.4
+HIV prevalence,2022,Virginia,51,"24,722",336.4
+HIV prevalence,2023,Virginia,51,"25,355",343.1
+HIV prevalence,2020 (COVID-19 Pandemic),Washington,53,"14,183",218
+HIV prevalence,2021,Washington,53,"14,495",221.5
+HIV prevalence,2022,Washington,53,"14,903",225.7
+HIV prevalence,2023,Washington,53,"15,451",232.3
+HIV prevalence,2020 (COVID-19 Pandemic),West Virginia^,54,"2,047",133.2
+HIV prevalence,2021,West Virginia^,54,"2,123",138.3
+HIV prevalence,2022,West Virginia^,54,"2,226",145.7
+HIV prevalence,2023,West Virginia^,54,"2,304",151
+HIV prevalence,2020 (COVID-19 Pandemic),Wisconsin,55,"6,578",131.7
+HIV prevalence,2021,Wisconsin,55,"6,787",135.9
+HIV prevalence,2022,Wisconsin,55,"6,922",138
+HIV prevalence,2023,Wisconsin,55,"7,173",142.1
+HIV prevalence,2023,Wyoming,56,394,79.5
+HIV prevalence,2022,Wyoming,56,378,76.9
+HIV prevalence,2021,Wyoming,56,374,76.7
+HIV prevalence,2020 (COVID-19 Pandemic),Wyoming,56,354,73.2
