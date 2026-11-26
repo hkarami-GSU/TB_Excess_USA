@@ -99,6 +99,7 @@ if area <= length(stateNames)
 stateName = stateNames{area};
 
 stateName = strrep(stateName, '_', ' ');
+stateName = strrep(regexprep(stateName, '([a-z])([A-Z])', '$1 $2'), ' Of ', ' of ');
 else
 stateName = sprintf('Area %d', area);
 end

@@ -429,7 +429,7 @@ subplot(2,2,1);
 scatter(y_valid, y_pred_step, 60, [0.2 0.4 0.8], 'filled', 'MarkerEdgeColor', 'k');
 hold on;
 plot([0, max(y_valid)*1.1], [0, max(y_valid)*1.1], 'r--', 'LineWidth', 2);
-xlabel('Estimated Excess Rate (per 100,000)', 'FontSize', 11);
+xlabel('Excess TB incidence rate (per 100,000)', 'FontSize', 11);
 ylabel('Fitted Values', 'FontSize', 11);
 title('Estimated vs Fitted', 'FontSize', 12, 'FontWeight', 'normal');
 xlim([0, max(y_valid)*1.1]); ylim([0, max(y_valid)*1.1]);
@@ -488,6 +488,10 @@ std_hi = std_coefs + 1.96*std_se;
 
 
 step_coef_labels = cellfun(@(s) label_map(s), step_coef_names, 'UniformOutput', false);
+[~, wo_idx] = ismember(step_coef_names, sens.predictor);
+wo_coefs = sens.std_without(wo_idx);
+wo_lo = sens.lo_without(wo_idx);
+wo_hi = sens.hi_without(wo_idx);
 
 
 fprintf('\n=== Standardized coefficients, final model (paper Fig 3) ===\n');
@@ -511,10 +515,12 @@ for k = 1:n_coef
 errorbar(ax2, std_coefs(k), y_pos(k), 0, 0, 1.96*std_se(k), 1.96*std_se(k), ...
 'Color', plot_color, 'LineWidth', 2, 'CapSize', 8);
 scatter(ax2, std_coefs(k), y_pos(k), 150, plot_color, 'filled', 'MarkerEdgeColor', 'k');
+errorbar(ax2, wo_coefs(k), y_pos(k) - 0.25, 0, 0, wo_coefs(k) - wo_lo(k), wo_hi(k) - wo_coefs(k), 'Color', plot_color, 'LineWidth', 1, 'CapSize', 6);
+scatter(ax2, wo_coefs(k), y_pos(k) - 0.25, 90, plot_color, 'MarkerFaceColor', 'w', 'MarkerEdgeColor', plot_color, 'LineWidth', 1.5);
 end
 
 
-x_text = max(std_hi) + 0.05;
+x_text = max([std_hi; wo_hi]) + 0.05;
 lbl = @(v) sprintf('%.*f', 2 + (abs(v) < 0.005 && v ~= 0), v);
 for k = 1:n_coef
 text(ax2, x_text, y_pos(k), sprintf('%s (%s, %s)', lbl(std_coefs(k)), lbl(std_lo(k)), lbl(std_hi(k))), ...
@@ -525,8 +531,8 @@ text(ax2, x_text, n_coef + 0.55, 'Coefficient (95% CI)', 'FontSize', 12, 'FontWe
 
 
 xline(ax2, 0, 'k--', 'LineWidth', 1.5);
-x_min = min(0, floor(min(std_lo) * 10) / 10);
-x_max_tick = ceil(max(std_hi) * 10) / 10;
+x_min = min(0, floor(min([std_lo; wo_lo]) * 10) / 10);
+x_max_tick = ceil(max([std_hi; wo_hi]) * 10) / 10;
 set(ax2, 'YTick', y_pos, 'YTickLabel', step_coef_labels, 'FontSize', 12, ...
 'XTick', x_min:0.1:x_max_tick);
 xlim(ax2, [x_min - 0.02, x_text + 0.40]);
@@ -536,39 +542,52 @@ ax2.XGrid = 'on'; ax2.YGrid = 'off'; box(ax2, 'on');
 
 exportgraphics(fig2, fullfile(results_path, 'regression_forest_plot_RATES.pdf'), 'ContentType', 'vector', 'Resolution', 300);
 
-fig3 = figure('Position', [100, 100, 1200, 400], 'Color', 'w');
+fig3 = figure('Color', 'w');
 
 sig_predictors = step_coef_names;
 n_sig = length(sig_predictors);
-n_cols = min(n_sig, 4);
-n_rows = ceil(n_sig / n_cols);
-set(fig3, 'Position', [100, 100, 1200, 400*n_rows]);
-for k = 1:n_sig
-subplot(n_rows, n_cols, k);
+set(fig3, 'Position', [100, 100, 250*n_sig, 340]);
+tl = tiledlayout(fig3, 1, n_sig, 'TileSpacing', 'compact', 'Padding', 'compact');
+y_top = 2*ceil(max(y_valid)/2);
+xlab_map = containers.Map( ...
+{'Density', 'ForeignBornPct', 'PovertyPct', 'HIVRate', 'IncarcerationRate', 'HomelessRate', 'AIANPct'}, ...
+{{'Population density', '(per sq mi)'}, {'Foreign-born population', '(%)'}, {'Poverty rate', '(%)'}, ...
+{'HIV prevalence', '(per 100,000)'}, {'Incarceration rate', '(per 100,000)'}, ...
+{'Homelessness rate', '(per 100,000)'}, {'AI/AN population', '(%)'}});
 
+
+for k = 1:n_sig
+ax = nexttile(tl);
+ax.FontSize = 14;
 pred_idx = find(strcmp(predictor_names, sig_predictors{k}));
 x_pred = X_valid(:, pred_idx);
 
-
-scatter(x_pred, y_valid, 60, [0.2 0.4 0.8], 'filled', 'MarkerEdgeColor', 'k', 'MarkerFaceAlpha', 0.7);
-hold on;
+scatter(ax, x_pred, y_valid, 50, [0.2 0.4 0.8], 'filled', 'MarkerEdgeColor', 'k', 'MarkerFaceAlpha', 0.7);
+hold(ax, 'on');
 p = polyfit(x_pred, y_valid, 1);
 x_line = linspace(min(x_pred), max(x_pred), 100);
-y_line = polyval(p, x_line);
-plot(x_line, y_line, 'r-', 'LineWidth', 2);
+plot(ax, x_line, polyval(p, x_line), 'r-', 'LineWidth', 2);
+p_wo = polyfit(x_pred(keep), y_valid(keep), 1);
+x_line_wo = linspace(min(x_pred(keep)), max(x_pred(keep)), 100);
+plot(ax, x_line_wo, polyval(p_wo, x_line_wo), 'r--', 'LineWidth', 1.5);
+
 if x_pred(i_out) > mean([min(x_pred), max(x_pred)])
-text(x_pred(i_out), y_valid(i_out), [out_state '  '], 'FontSize', 10, 'HorizontalAlignment', 'right');
+text(ax, x_pred(i_out), y_valid(i_out), [out_state '  '], 'FontSize', 13, 'HorizontalAlignment', 'right');
 else
-text(x_pred(i_out), y_valid(i_out), ['  ' out_state], 'FontSize', 10, 'HorizontalAlignment', 'left');
+text(ax, x_pred(i_out), y_valid(i_out), ['  ' out_state], 'FontSize', 13, 'HorizontalAlignment', 'left');
 end
-
-
 r = corr(x_pred, y_valid);
 
-xlabel(label_map(sig_predictors{k}), 'FontSize', 12);
-ylabel('Estimated Excess Rate (per 100,000)', 'FontSize', 12);
-title(sprintf('r = %.3f', r), 'FontSize', 12, 'FontWeight', 'normal');
-grid on; box on;
+
+xlabel(ax, xlab_map(sig_predictors{k}), 'FontSize', 15);
+if k == 1
+ylabel(ax, {'Excess TB incidence rate', ['(per 100,000, 2020' char(8211) '2023)']}, 'FontSize', 15);
+else
+ax.YTickLabel = [];
+end
+ylim(ax, [0 y_top]);
+title(ax, sprintf('r = %.3f', r), 'FontSize', 15, 'FontWeight', 'normal');
+grid(ax, 'on'); box(ax, 'on');
 end
 exportgraphics(fig3, fullfile(results_path, 'regression_scatterplots_RATES.pdf'), 'ContentType', 'vector', 'Resolution', 300);
 fprintf('\n========================================\n');

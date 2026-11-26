@@ -149,7 +149,7 @@ end
 sort_matrix = [year_medians, year_uppers, year_lowers];
 [~, sort_idx] = sortrows(sort_matrix, [1, 2, 3], {'ascend', 'ascend', 'ascend'});
 
-sorted_states = selectedStates(sort_idx);
+sorted_states = strrep(regexprep(selectedStates(sort_idx), '([a-z])([A-Z])', '$1 $2'), ' Of ', ' of ');
 sorted_medians = year_medians(sort_idx);
 sorted_lowers = year_lowers(sort_idx);
 sorted_uppers = year_uppers(sort_idx);
@@ -222,7 +222,7 @@ end
 
 sort_matrix = [total_medians, total_uppers, total_lowers];
 [~, sort_idx] = sortrows(sort_matrix, [1, 2, 3], {'ascend', 'ascend', 'ascend'});
-sorted_states = selectedStates(sort_idx);
+sorted_states = strrep(regexprep(selectedStates(sort_idx), '([a-z])([A-Z])', '$1 $2'), ' Of ', ' of ');
 sorted_medians = total_medians(sort_idx);
 sorted_lowers = total_lowers(sort_idx);
 

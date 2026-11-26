@@ -344,6 +344,7 @@ fig = figure('Units','inches','Position',[1 1 width_inches height_inches]);
 
 [~, sort_idx] = sortrows([medians, uppers, lowers], [1 2 3], {'ascend','ascend','ascend'});
 states  = states(sort_idx);
+states  = strrep(regexprep(states, '([a-z])([A-Z])', '$1 $2'), ' Of ', ' of ');
 medians = medians(sort_idx);
 
 
